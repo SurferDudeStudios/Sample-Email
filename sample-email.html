@@ -2,78 +2,93 @@
 <!-- HTML styles fix 120dpi scaling on Outlook -->
 <html xmlns="http://www.w3.org/1999/xhtml"  xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
- <title>Sample Email - Surfer Dude Studios</title>
- <!-- Meta tags  -->
- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
- <meta content="IE=edge" http-equiv="X-UA-Compatible" />
- <meta charset="utf-8" />
- <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sample Email - Surfer Dude Studios</title>
+<!-- Meta tags  -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <!-- Gmail Styles - MUST BE KEPT UNDER 8,192 Characters from <style> to </style> or it will break -->
- <style type="text/css">
+<style type="text/css">
+@media screen and (max-width: 600px) {
+table {
+	width:100% !important;
+	table-layout: auto!important;
+}
+};
 @media screen and (max-width: 480px) {
+.hide, .hide table, .hide td, .hide tr, .hide a, .hide img {
+	display:none !important;
+	width:0 !important;
+	height:0 !important;
+	max-height:0 !important;
+	line-height:0 !important;
+	mso-hide:all !important;
+	overflow:hidden !important;
+	visibility:hidden !important;
+}
 };
 </style>
- <!-- Font Styles -->
- <style type="text/css">
+<!-- Font Styles -->
+<style type="text/css">
 @media screen {
 @font-face {
-  font-family: 'Muli';
-  font-style: normal;
-  font-weight: 400;
-  font-display: block;
-  src: local('Muli Regular'), local('Muli-Regular'), url(https://fonts.gstatic.com/s/muli/v12/7Auwp_0qiz-afT3GLQjUwkQ1OQ.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+	font-family: 'Muli';
+	font-style: normal;
+	font-weight: 400;
+	font-display: block;
+	src: local('Muli Regular'), local('Muli-Regular'), url(https://fonts.gstatic.com/s/muli/v12/7Auwp_0qiz-afT3GLQjUwkQ1OQ.woff2) format('woff2');
+ unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
-  font-family: 'Muli';
-  font-style: normal;
-  font-weight: 400;
-  font-display: block;
-  src: local('Muli Regular'), local('Muli-Regular'), url(https://fonts.gstatic.com/s/muli/v12/7Auwp_0qiz-afTzGLQjUwkQ1OQ.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+	font-family: 'Muli';
+	font-style: normal;
+	font-weight: 400;
+	font-display: block;
+	src: local('Muli Regular'), local('Muli-Regular'), url(https://fonts.gstatic.com/s/muli/v12/7Auwp_0qiz-afTzGLQjUwkQ1OQ.woff2) format('woff2');
+ unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
-  font-family: 'Muli';
-  font-style: normal;
-  font-weight: 400;
-  font-display: block;
-  src: local('Muli Regular'), local('Muli-Regular'), url(https://fonts.gstatic.com/s/muli/v12/7Auwp_0qiz-afTLGLQjUwkQ.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	font-family: 'Muli';
+	font-style: normal;
+	font-weight: 400;
+	font-display: block;
+	src: local('Muli Regular'), local('Muli-Regular'), url(https://fonts.gstatic.com/s/muli/v12/7Auwp_0qiz-afTLGLQjUwkQ.woff2) format('woff2');
+ unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 };
 </style>
- <!-- Non Gmail styles -->
- <style type="text/css">
+<!-- Non Gmail styles -->
+<style type="text/css">
 @media screen and (max-width: 480px) {
 };
 </style>
- <!-- Shared styles -->
- <style type="text/css">
+<!-- Shared styles -->
+<style type="text/css">
 @media screen and (max-width: 480px) {
 };
-
-@media screen and (max-width: 640px) {
+ @media screen and (max-width: 600px) {
 };
 </style>
- <!-- MSO Style Fixes -->
- <!--[if (gte mso 9)|(IE)]>
+<!-- MSO Style Fixes -->
+<!--[if (gte mso 9)|(IE)]>
    <style>
     #outlookholder { width:600px;}
     table {border-collapse: collapse !important;}
    </style>
   <![endif]-->
 
- <!-- Images fix for 120dpi scaling in outlook -->
- <!--[if gte mso 9]><xml>
+<!-- Images fix for 120dpi scaling in outlook -->
+<!--[if gte mso 9]><xml>
    <o:OfficeDocumentSettings>
    <o:AllowPNG/>
    <o:PixelsPerInch>96</o:PixelsPerInch>
    </o:OfficeDocumentSettings>
   </xml><![endif]-->
 
- <!--[if (gte mso 12)|(gte mso 14)|(gte mso 15)]>
+<!--[if (gte mso 12)|(gte mso 14)|(gte mso 15)]>
     <style type="text/css">
     td#offer{
      padding-bottom:0 !important;
@@ -84,83 +99,121 @@
 <body bgcolor="#40E0D0" text="#333333" style="background-color: #40E0D0; color: #333333; margin: 0px; padding: 0px; -webkit-text-size-adjust:none;" yahoo="fix">
 <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
   <tr>
-    <td align="center" valign="top">
-      <table cellspacing="0" cellpadding="0" border="0" width="100%" class="container" align="center">
+    <td align="center" valign="top"><table cellspacing="0" cellpadding="0" border="0" width="100%" class="container" align="center">
         <tr>
-          <td align="center" valign="top">
-            <table cellspacing="0" cellpadding="0" style="border-color : none; border-width : 0px; border-style : solid;" bgcolor="#ffffff" width="100%">
-            <tr>
-            <td class="header" align="center" valign="top">
-            <!-- View this email in a browser start -->
-	<table bgcolor="#f1f1f1" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;">
-	<tr>
-		<td align="center" valign="top">
-			<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 600px;" width="600">
-
-				<tr>
-					<td style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:20px;" width="560">
-						<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
-
-							<tr>
-								<td align="left" style="font-family:'Muli',Helvetica,Arial,sans-serif; font-size:12px; line-height:14px; color:#333333;" valign="top">
-									<a href="" style="font-family:'Muli',Helvetica,Arial,sans-serif; color:#0072ba; text-decoration:underline; outline:0;" target="_blank" title="View this email in a browser">View this email in a browser.</a>
-								</td>
-							</tr>
-
-						</table>
-					</td>
-				</tr>
-
-			</table>
-		</td>
-	</tr>
-    </table>
-	<!-- View this email in a browser end -->	
-            </td>
-            </tr>
-            <tr>
-            <td align="center" valign="top">
-            Branding heading
-            </td>
-            </tr>
-           </table>
-          </td>
-         </tr>
-         <tr>
-          <td align="center" valign="top">
-            <table cellspacing="0" cellpadding="0" style="border-color : none; border-width : 0px; border-style : solid;" bgcolor="#40E0D0" width="100%">
-            <tr>
-            <td align="center" valign="top">
-            Header banner
-            </td>
-            </tr>
-            <tr>
-            <td align="center" valign="top">
-            Content
-            </td>
-            </tr>
-            <tr>
-            <td align="center" valign="top">
-            Social links
-            </td>
-            </tr>
-            <tr>
-            <td align="center" valign="top">
-            Footer controls
-            </td>
-            </tr>
-            <tr>
-            <td align="center" valign="top">
-<!-- Social Media Start-->
+          <td align="center" valign="top"><table cellspacing="0" cellpadding="0" style="border-color : none; border-width : 0px; border-style : solid;" bgcolor="#ffffff" width="100%">
+              <tr>
+                <td class="header" align="center" valign="top"><!-- View this email in a browser start -->
                   
-                  <table bgcolor="#333366" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:600px; background-color: #333366; color: #ffffff; border-top:6px solid #cccccc;" width="600">
+                  <table bgcolor="#333333" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;">
                     <tr>
+                      <td align="center" valign="top"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 600px;" width="600">
+                          <tr>
+                            <td style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:20px;" width="560"><table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                <tr>
+                                  <td align="left" style="font-family:'Muli',Helvetica,Arial,sans-serif; font-size:12px; line-height:14px; color:#e6ac00;" valign="top"><a href="" style="font-family:'Muli',Helvetica,Arial,sans-serif; color:#e6ac00; text-decoration:underline; outline:0;" target="_blank" title="View this email in a browser">View this email in a browser.</a></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table>
+                  
+                  <!-- View this email in a browser end --></td>
+              </tr>
+              <tr>
+                <td align="center" valign="top"><!-- Brand Bar Content -->
+                  
+                  <table bgcolor="#333366" border="0" cellpadding="0" cellspacing="0" role="presentation" style="min-width: 100%; background-color: #333366; color: #ffffff;" width="100%">
+                    <tr>
+                      <td align="center" valign="top"><table bgcolor="#333366" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:600px; background-color: #333366; color: #ffffff;" width="600">
+                          <tr>
+                            <td align="right" style="padding-top:20px; padding-right:20px; padding-bottom:20px; padding-left:20px;" valign="top"><table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:560px" width="560">
+                                <tr>
+                                  <td align="left" valign="top"><table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:200px;" width="200">
+                                      <tr> 
+                                        <!-- Brand Logo -->
+                                        <td align="left" style="width:200px;" valign="middle" width="200"><a href="http://www.surferdudestudios.co.uk" style="outline:0;" target="_blank" title="Surfer Dude Studios">
+                                         <img align="left" alt="Surfer Dude Studios" border="0" height="51" src="https://www.surferdudestudios.co.uk/img/email/surferDudeStudiosEmailBrandBar.jpg" style="display:block; width:154px; height:51px;" width="154" /> </a></td>
+                                        <!-- Brand Logo END --> 
+                                      </tr>
+                                    </table>
+                                    <table align="right" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:360px;" width="360">
+                                      <tr>
+                                        <td align="left" style="width:360px;" valign="top" width="360"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:360px;" width="360">
+                                            <tr>
+                                              <td align="right" height="51" style="height:51px;" valign="top"><table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                                  <tr>
+                                                    <td align="right" style="padding-bottom:5px;" valign="top"><span style="color:#ffffff; font-family:'Muli',Helvetica,Arial,sans-serif;">Surfer Dude Studios </span></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td align="right" style="font-family:'Muli',Helvetica,Arial,sans-serif; font-size:15px; line-height:18px; color:#ffffff;" valign="top">
+                                                     February 2019</td>
+                                                  </tr>
+                                                </table></td>
+                                            </tr>
+                                          </table></td>
+                                      </tr>
+                                    </table></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <!-- Brand Bar END -->
+                        </table></td>
+                    </tr>
+                  </table>
+                  <!-- Brand Bar Content END --></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td align="center" valign="top"><table cellspacing="0" cellpadding="0" style="border-color : none; border-width : 0px; border-style : solid;" bgcolor="#40E0D0" width="100%">
+              <tr>
+                <td align="center" valign="top">
+                
+                 <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:600px; background-color: #ffffff; color: #333333;" width="600">
+                   <tr>
                       <td style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:20px;" width="560">
-                      <!-- Social Media -->
+                       Header banner
+                     </td>
+                   </tr>
+                 </table>
+                 
+                </td>
+              </tr>
+              <tr>
+                <td align="center" valign="top">
+               
+                <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:600px; background-color: #ffffff; color: #333333;" width="600">
+                   <tr>
+                      <td style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:20px;" width="560">
+                       Content
+                     </td>
+                   </tr>
+                 </table>
+                 
+                </td>
+              </tr>
+              <tr>
+                <td align="center" valign="top"><!-- Social Media Start-->
+                  
+                  <table bgcolor="#333366" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:600px; background-color: #333366; color: #ffffff;" width="600">
+                    <tr>
+                      <td style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:20px;" width="560"><!-- Social Media -->
                         
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
                           <tr>
-                            <td style="font-family:'Muli',Helvetica,Arial,sans-serif; font-size:14px; line-height:18px; text-align:center; color:#ffffff; padding-bottom:10px;"> Social Media links </td>
+                            <td style="text-align:center; color:#ffffff;">
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="text-align: center">
+                                <tr>
+                                  <td style="padding-right:5px; padding-left:5px;"><a href="https://github.com/SurferDudeStudios" target="_blank" title="Surfer Dude Studios Github">
+                                   <img src="https://www.surferdudestudios.co.uk/img/email/email-icon-github.jpg" alt="Surfer Dude Studios Github" style="width: 20px;" /></a></td>
+                                  <td style="padding-right:5px; padding-left:5px;"><a href="https://vimeo.com/surferdudestudios" target="_blank" title="Surfer Dude Studios on Vimeo">
+                                  <img src="https://www.surferdudestudios.co.uk/img/email/email-icon-vimeo.jpg" alt="Surfer Dude Studios on Vimeo" style="width: 20px;" /></a></td>
+                                  <td style="padding-right:5px; padding-left:5px;"><a href="https://uk.linkedin.com/in/roderick-dewar-b55ab354" target="_blank" title="Surfer Dude Studios on Linkedin">
+                                  <img src="https://www.surferdudestudios.co.uk/img/email/email-icon-linkedin.jpg" alt="Surfer Dude Studios on Linkedin" style="width: 20px;" /></a></td>
+                                </tr>
+                              </table></td>
                           </tr>
                         </table>
                         
@@ -171,23 +224,35 @@
                   <!-- Social Media end --> 
                   
                   <!-- Web Links Start-->
-                  
                   <table bgcolor="#333366" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:600px; background-color: #333366; color: #ffffff;" width="600">
                     <tr>
-                      <td style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:20px;" width="560"><!-- Web Links -->
+                      <td style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:20px;" width="560">
                         
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
                           <tr>
-                            <td style="font-family:'Muli',Helvetica,Arial,sans-serif; font-size:14px; line-height:18px; text-align:center; color:#ffffff; padding-bottom:10px;"> Web / Footer controls </td>
+                            <td align="center" bgcolor="#333366" style="padding:10px 20px 10px 20px; color:#ffffff;" valign="top"><table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" width="30%">
+                                <tr>
+                                  <td align="center" style="font-family:'Muli',Helvetica,Arial,sans-serif; font-size:15px; line-height:20px;" valign="top"><a href="https://www.surferdudestudios.co.uk/contact" style="text-decoration:underline; color:#ffffff; outline:0;" target="_blank" title="Legal">Contact</a></td>
+                                </tr>
+                              </table>
+                              <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" width="30%">
+                                <tr>
+                                  <td align="center" style="font-family:'Muli',Helvetica,Arial,sans-serif; font-size:15px; line-height:20px;" valign="top"><a href="https://www.surferdudestudios.co.uk/about" style="text-decoration:underline; color:#ffffff; outline:0;" target="_blank" title="About">About</a></td>
+                                </tr>
+                              </table>
+                              <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" width="30%">
+                                <tr>
+                                  <td align="center" style="font-family:'Muli',Helvetica,Arial,sans-serif; font-size:15px; line-height:20px;" valign="top"><a href="https://www.surferdudestudios.co.uk/terms" style="text-decoration:underline; color:#ffffff; outline:0;" target="_blank" title="Terms and conditions">Terms and conditions</a></td>
+                                </tr>
+                              </table></td>
                           </tr>
                         </table>
                         
-                        <!-- Web Links - end --></td>
+                      </td>
                     </tr>
                   </table>
                   
                   <!-- Web Links end --> 
-                  
                   <!-- Email Footer Start-->
                   
                   <table bgcolor="#333366" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:600px; background-color: #333366; color: #ffffff;" width="600">
@@ -201,8 +266,10 @@
                           </tr>
                           <tr>
                             <td align="center" style="font-family:'Muli',sans-serif; font-size:14px; line-height:18px; color:#ffffff; padding-bottom:10px;" valign="top">
-                             This email was sent by: <b>Surfer Dude Studios</b> &copy; 2019<br />
-                             Registered address </td>
+                            Please do not reply to this email as this email address is unmonitored.<br />Add <a href="mailto:mailings@surferdudestudios.co.uk" style="font-family:'Muli',Helvetica,Arial,sans-serif; text-decoration:underline; color:#ffffff; outline:0;" target="_blank" title="Mailings from Surfer Dude Studios">mailings@surferdudestudios.co.uk</a> to your email contacts to never miss out on our emails.</td>
+                          </tr>
+                          <tr>
+                            <td align="center" style="font-family:'Muli',sans-serif; font-size:14px; line-height:18px; color:#ffffff; padding-bottom:10px;" valign="top"> This email was sent by: <b>Surfer Dude Studios</b> &copy; 2019<br />Registered address </td>
                           </tr>
                         </table>
                         
@@ -210,14 +277,11 @@
                     </tr>
                   </table>
                   
-                  <!-- Email Footer end -->
-            </td>
-            </tr>
-            </table>
-          </td>
+                  <!-- Email Footer end --></td>
+              </tr>
+            </table></td>
         </tr>
-      </table>
-    </td>
+      </table></td>
   </tr>
 </table>
 </body>
