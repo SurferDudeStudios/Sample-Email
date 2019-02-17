@@ -15,18 +15,26 @@ table {
 	width: 100% !important;
 	table-layout: auto!important;
 }
+.pd-t {padding:5% 0 0 0 !important; height:auto !important;}
+.pd-r {padding:0 5% 0 0 !important; height:auto !important;}
+.pd-b {padding:0 0 5% 0 !important; height:auto !important;}
+.pd-l {padding:0 0 0 5% !important; height:auto !important;}
+.pd-tb {padding:5% 0 5% 0 !important; height:auto !important;}
+.pd-rl {padding:0 5% 0 5% !important; height:auto !important;}
+.pd-trl {padding:5% 5% 0 5% !important; height:auto !important;}
+.pd-rbl {padding:0 5% 5% 5% !important; height:auto !important;}
+.pd-all {padding:5% 5% 5% 5% !important; height:auto !important;}
+.pd-none {padding:0 0 0 0 !important; height:auto !important;}
+	
+.w-100 {width:100% !important; height:auto !important;}
+.w-90 {width:90% !important; height:auto !important;}
+.w-80 {width:80% !important; height:auto !important;}
+.w-70 {width:70% !important; height:auto !important;}
+.w-60 {width:60% !important; height:auto !important;}
+.w-50 {width:50% !important; height:auto !important;}
+.w-40 {width:40% !important; height:auto !important;}
 };
- @media screen and (max-width: 480px) {
-.hide, .hide table, .hide td, .hide tr, .hide a, .hide img {
-	display: none !important;
-	width: 0 !important;
-	height: 0 !important;
-	max-height: 0 !important;
-	line-height: 0 !important;
-	mso-hide: all !important;
-	overflow: hidden !important;
-	visibility: hidden !important;
-}
+@media screen and (max-width: 480px) {
 };
 </style>
 <!-- Font Styles -->
@@ -63,13 +71,32 @@ table {
 <!-- Non Gmail styles -->
 <style type="text/css">
 @media screen and (max-width: 480px) {
+.hide, .hide table, .hide td, .hide tr, .hide a, .hide img {
+	display: none !important;
+	width: 0 !important;
+	height: 0 !important;
+	max-height: 0 !important;
+	line-height: 0 !important;
+	mso-hide: all !important;
+	overflow: hidden !important;
+	visibility: hidden !important;
+}
 };
 </style>
 <!-- Shared styles -->
 <style type="text/css">
+body {-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;margin:0 !important;}
+p { margin: 1em 0;} 
+table td { border-collapse: collapse;} 
+img {outline:0;}
+a img {border:none;}
 @media screen and (max-width: 480px) {
+body { padding: 0px !important; font-size: 16px !important; line-height: 150% !important;}
+h1 { font-size: 22px !important; line-height: normal !important;}
+h2 { font-size: 20px !important; line-height: normal !important;}
+h3 { font-size: 18px !important; line-height: normal !important;}
 };
- @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
 };
 </style>
 <!-- MSO Style Fixes -->
@@ -128,7 +155,8 @@ table {
                     <tr>
                       <td align="center" valign="top"><table bgcolor="#333366" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:600px; background-color: #333366; color: #ffffff;" width="600">
                           <tr>
-                            <td align="right" style="padding-top:20px; padding-right:20px; padding-bottom:20px; padding-left:20px;" valign="top"><table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:560px" width="560">
+                            <td align="right" style="padding-top:20px; padding-right:20px; padding-bottom:20px; padding-left:20px;" valign="top">
+							  <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:560px" width="560">
                                 <tr>
                                   <td align="left" valign="top"><table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:200px;" width="200">
                                       <tr> 
@@ -168,11 +196,12 @@ table {
         <tr>
           <td align="center" valign="top"><table cellspacing="0" cellpadding="0" style="border-color : none; border-width : 0px; border-style : solid;" bgcolor="#40E0D0" width="100%">
               <tr>
-                <td align="center" valign="top"><table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:600px; background-color: #ffffff; color: #333333;" width="600">
+                <td align="center" valign="top"><table class="hide" bgcolor="#333366" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:600px; background-color: #ffffff; color: #333333;" width="600">
                     <tr>
                       <td width="600"><table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
                           <tr>
-                            <td align="center" valign="top"><img src="https://www.surferdudestudios.co.uk/img/email/surferDudeStudiosEmailHeader.jpg" alt="" style="height: auto; width: 100%; padding: 0 0 20px 0; text-align: center;" width="100%" /></td>
+                            <td align="center" valign="top">
+							 <img src="https://www.surferdudestudios.co.uk/img/email/surferDudeStudiosEmailHeader.jpg" alt="Surfer Dude Studios email" style="height: auto; width: 100%; padding: 0 0 20px 0; text-align: center;" width="100%" /></td>
                           </tr>
                         </table></td>
                     </tr>
@@ -185,7 +214,7 @@ table {
                         
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:600px" width="600">
                           <tr>
-                            <td align="left" valign="top"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:600px; padding: 0 50px 20px 50px;" width="600">
+                            <td class="pd-t" align="left" valign="top"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:600px; padding: 0 50px 20px 50px;" width="600">
                                 <tr>
                                   <td align="left" style="font-family:'Muli',Helvetica,Arial,sans-serif; font-size:24px; line-height:30px; color:#333366; padding-bottom:20px;" valign="top"><strong>Welcome to February's newsletter</strong></td>
                                 </tr>
@@ -206,7 +235,7 @@ table {
                         
                         <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:300px;" width="300">
                           <tr>
-                            <td align="left" style="padding:0 10px 25px 50px;" valign="top"><table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                            <td align="left" class="pd-trl" style="padding:0 10px 25px 50px;" valign="top"><table class="pd-rl" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
                                 <tr>
                                   <td align="left" style="border-bottom:6px solid #333366;" valign="top"><img src="https://www.surferdudestudios.co.uk/img/rugby-001.jpg" alt="" style="height: auto; width: 100%; padding: 0px; text-align: center;" width="240" /></td>
                                 </tr>
@@ -231,13 +260,12 @@ table {
                         </table>
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:300px;" width="300">
                           <tr>
-                            <td align="left" style="padding:0 50px 25px 10px;" valign="top"><table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                            <td align="left" class="pd-trl" style="padding:0 50px 25px 10px;" valign="top"><table class="pd-rl" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
                                 <tr>
                                   <td align="left" style="border-bottom:6px solid #333366;" valign="top"><img src="https://www.surferdudestudios.co.uk/img/git-github-960.jpg" alt="" style="height: auto; width: 100%; padding: 0px; text-align: center;" width="240" /></td>
                                 </tr>
                                 <tr>
                                   <td align="left" style="font-family:'Muli',Helvetica,Arial,sans-serif; font-size:20px; line-height:24px; color:#005996; padding:20px 0 5px 0;" valign="top"><strong>Git and Github</strong></td>
-
                                 </tr>
                                 <tr>
                                   <td align="left" style="font-family:'Muli',Helvetica,Arial,sans-serif; font-size:14px; line-height:18px; color:#333366; padding:0 0 10px 0;" valign="top">A free and open source revision control software service, and a web based hosting service solution.</td>
@@ -262,18 +290,18 @@ table {
                         
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:600px" width="600">
                           <tr>
-                            <td align="left" valign="top" width="600"><table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:300px;" width="300">
+                            <td class="pd-all" align="left" valign="top" width="600"><table class="pd-trl" align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:300px;" width="300">
                                 <tr>
-                                  <td align="left" style="padding:0 10px 25px 50px;" valign="top"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 240px;" width="240">
+                                  <td align="left" class="pd-none" style="padding:0 10px 25px 50px;" valign="top"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 240px;" width="240">
                                       <tr>
                                         <td align="left" style="border-bottom:6px solid #333366;" valign="top"><img src="https://www.surferdudestudios.co.uk/img/hitFilmLogo-960.jpg" alt="Hitflim Express and its use at Surfer Dude Studios" style="height: auto; width: 100%; padding: 0px; text-align: center;" width="240" /></td>
                                       </tr>
                                     </table></td>
                                 </tr>
                               </table>
-                              <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:300px;" width="300">
+                              <table class="pd-trl" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:300px;" width="300">
                                 <tr>
-                                  <td align="left" style="padding:0 50px 25px 10px;" valign="top"><table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                  <td align="left" class="pd-none" style="padding:0 50px 25px 10px;" valign="top"><table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
                                       <tr>
                                         <td align="left" style="font-family:'Muli',Helvetica,Arial,sans-serif; font-size:20px; line-height:24px; color:#005996; padding:0 0 5px 0;" valign="top"><strong>Hitfilm Express</strong></td>
                                       </tr>
@@ -293,18 +321,18 @@ table {
                         
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:600px" width="600">
                           <tr>
-                            <td align="left" valign="top" width="600"><table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:300px;" width="300">
+                            <td class="pd-all" align="left" valign="top" width="600"><table class="pd-trl" align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:300px;" width="300">
                                 <tr>
-                                  <td align="left" style="padding:0 10px 25px 50px;" valign="top"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 240px;" width="240">
+                                  <td align="left" class="pd-none" style="padding:0 10px 25px 50px;" valign="top"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 240px;" width="240">
                                       <tr>
                                         <td align="left" style="border-bottom:6px solid #333366;" valign="top"><img src="https://www.surferdudestudios.co.uk/img/beach-001.jpg" alt="Surfing at Surfer Dude Studios" style="height: auto; width: 100%; padding: 0px; text-align: center;" width="240" /></td>
                                       </tr>
                                     </table></td>
                                 </tr>
                               </table>
-                              <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:300px;" width="300">
+                              <table class="pd-trl" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:300px;" width="300">
                                 <tr>
-                                  <td align="left" style="padding:0 50px 25px 10px;" valign="top"><table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                  <td align="left" class="pd-none" style="padding:0 50px 25px 10px;" valign="top"><table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
                                       <tr>
                                         <td align="left" style="font-family:'Muli',Helvetica,Arial,sans-serif; font-size:20px; line-height:24px; color:#005996; padding:0 0 5px 0;" valign="top"><strong>Surfing</strong></td>
                                       </tr>
@@ -326,7 +354,7 @@ table {
                         
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation">
                           <tr>
-                            <td align="left" style="padding:0 50px 25px 50px;" valign="top" width="600"><table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                            <td class="pd-trl" align="left" style="padding:0 50px 25px 50px;" valign="top" width="600"><table class="pd-trl" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
                                 <tr>
                                   <td align="left" style="font-family:'Muli',Helvetica,Arial,sans-serif; font-size:20px; line-height:24px; color:#005996; padding:0 0 5px 0;" valign="top"><strong>Bond gun barrel</strong></td>
                                 </tr>
@@ -340,7 +368,7 @@ table {
                               </table></td>
                           </tr>
                           <tr>
-                            <td align="left" style="padding:0 50px 25px 50px;" valign="top" width="600"><table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                            <td class="pd-trl" align="left" style="padding:0 50px 25px 50px;" valign="top" width="600"><table class="pd-trl" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
                                 <tr>
                                   <td align="left" style="font-family:'Muli',Helvetica,Arial,sans-serif; font-size:14px; line-height:18px; color:#1d1d1d; padding:0 0 5px 0;" valign="top"></td>
                                 </tr>
@@ -364,7 +392,8 @@ table {
                         
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:600px" width="600">
                           <tr>
-                            <td align="left" valign="top"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:600px; padding: 0 50px 20px 50px;" width="600">
+                            <td class="pd-all" align="left" valign="top">
+							<table class="pd-all" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:600px; padding: 0 50px 20px 50px;" width="600">
                                 <tr>
                                   <td>
                                    <table bgcolor="#333366" style="background-color: #333366; padding: 30px;">
@@ -373,7 +402,7 @@ table {
                                          <table width="135" align="left" border="0" cellspacing="0" cellpadding="0">
                                             <tr>
                                               <td valign="top" width="135" style="padding-left: 10px; padding-right: 10px; font-family:'Muli',Helvetica,Arial,sans-serif; font-size:13px; line-height: 16px; color: #ffffff;">
-                                              <img src="https://www.surferdudestudios.co.uk/img/email/???.jpg" width="75" height="75" alt="" /><br />
+                                              <img src="https://www.surferdudestudios.co.uk/img/email/digital-video.jpg" width="75" height="75" alt="Digital video" /><br />
                                                 Digital video – the full process of planning, shooting, effects, titles, and editing.<br/>
                                                 <br />
                                                 <a href="https://www.surferdudestudios.co.uk/digital-video" target="_blank" style="color: #ffffff; text-decoration:underline;">Digital video</a></td>
@@ -382,7 +411,7 @@ table {
                                           <table width="135" align="left" border="0" cellspacing="0" cellpadding="0">
                                             <tr>
                                               <td valign="top" width="135" style="padding-left: 10px; padding-right: 10px; font-family:'Muli',Helvetica,Arial,sans-serif; font-size:13px; line-height: 16px; color: #ffffff;">
-                                              <img src="https://www.surferdudestudios.co.uk/img/email/???.jpg" width="75" height="75" alt="" /><br />
+                                              <img src="https://www.surferdudestudios.co.uk/img/email/full-stack-dev.jpg" width="75" height="75" alt="Full stack development" /><br />
                                                 Full stack development – build on your OS, Server, back-end, database, and front-end.<br />
                                                 <br />
                                                 <a href="https://www.surferdudestudios.co.uk/full-stack-development" target="_blank" style="color: #ffffff; text-decoration:underline;">Full stack development</a></td>
@@ -391,7 +420,7 @@ table {
                                           <table width="135" align="left" border="0" cellspacing="0" cellpadding="0">
                                             <tr>
                                               <td valign="top" width="135" style="padding-left: 10px; padding-right: 10px; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 16px; color: #ffffff;">
-                                              <img src="https://www.surferdudestudios.co.uk/img/email/???.jpg" width="75" height="75" alt="" /><br />
+                                              <img src="https://www.surferdudestudios.co.uk/img/email/ux-ui.jpg" width="75" height="75" alt="User experience" /><br />
                                                 User experience – making your product effective and accesible for everyone.<br />
                                                 <br />
                                                 <a href="https://www.surferdudestudios.co.uk/user-experience" target="_blank" style="color: #ffffff; text-decoration:underline;">User experience</a></td>
@@ -400,10 +429,9 @@ table {
                                           <table width="135" align="left" border="0" cellspacing="0" cellpadding="0">
                                             <tr>
                                               <td valign="top" width="135" style="padding-left: 10px; padding-right: 10px; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 16px; color: #ffffff;">
-                                              <img src="https://www.surferdudestudios.co.uk/img/email/???.jpg" width="75" height="75" alt="" /><br />
+                                              <img src="https://www.surferdudestudios.co.uk/img/email/more.jpg" width="75" height="75" alt="What else" /><br />
                                                 What else – learn more about what Surfer Dude Studios is and involved in.<br />
                                                 <br />
-
                                                 <a href="https://www.surferdudestudios.co.uk/more" target="_blank" style="color: #ffffff; text-decoration:underline;">What else?</a></td>
                                             </tr>
                                           </table></td>
